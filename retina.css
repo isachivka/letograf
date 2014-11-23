@@ -1,0 +1,81 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+input[data-rel="multipage"] {
+  background: url(i/str_retina.png) right 10px center no-repeat;
+  -webkit-background-size: 9px 13px;
+  background-size: 9px 13px;
+}
+
+.olap_content .olap_table li .str {
+  background: url(i/str_retina.png);
+}
+
+#login .logo a {
+  background: url('i/logo_retina.png') no-repeat top left;
+}
+#login .bg {
+  background: url(i/login.bg_retina.png) no-repeat bottom center;
+}
+body .input_set .double_login {
+  background: url('i/double.login_retina.png') no-repeat top left;
+}
+body .input_set .double_login1 {
+  background: url('i/double.login1_retina.png') no-repeat top left;
+}
+
+.b_top_box .label em {
+  background: url('i/three_retina.png') no-repeat top left;
+}
+
+.b_top_box .content ul.type_1 li.active a em {
+  background: url('i/+_retina.png') no-repeat top left;
+}
+
+.dialog_wrap .icon50.info {
+  background: url('i/info_retina.png') no-repeat top left;
+}
+
+.b_top_box .content ul.type_1 a i.i1 {background: url('i/i1_retina.png') no-repeat;}
+.b_top_box .content ul.type_1 a i.i2 {background: url('i/i2_retina.png') no-repeat;}
+.b_top_box .content ul.type_1 a i.i3 {background: url('i/i3_retina.png') no-repeat;}
+.b_top_box .content ul.type_1 a i.i4 {background: url('i/i4_retina.png') no-repeat;}
+
+i.icon.i1 {background: url(i/folder_retina.png) no-repeat;}
+
+i.icon.i2 {background: url(i/1_retina.png) no-repeat;}
+i.icon.i3 {background: url(i/2_retina.png) no-repeat;}
+i.icon.i4 {background: url(i/3_retina.png) no-repeat;}
+i.icon.i5 {background: url(i/4_retina.png) no-repeat;}
+i.icon.i6 {background: url(i/5_retina.png) no-repeat;}
+i.icon.i7 {background: url(i/6_retina.png) no-repeat;}
+i.icon.i8 {background: url(i/7_retina.png) no-repeat;}
+i.icon.i9 {background: url(i/8_retina.png) no-repeat;}
+i.icon.i10 {background: url(i/9_retina.png) no-repeat;}
+
+i.icon.i11 {background: url(i/11_retina.png) no-repeat;}
+i.icon.i12 {background: url(i/12_retina.png) no-repeat;}
+i.icon.i13 {background: url(i/13_retina.png) no-repeat;}
+i.icon.i14 {background: url(i/14_retina.png) no-repeat;}
+i.icon.i15 {background: url(i/15_retina.png) no-repeat;}
+i.icon.i16 {background: url(i/16_retina.png) no-repeat;}
+i.icon.i17 {background: url(i/17_retina.png) no-repeat;}
+i.icon.i18 {background: url(i/18_retina.png) no-repeat;}
+i.icon.i19 {background: url(i/19_retina.png) no-repeat;}
+i.icon.i20 {background: url(i/add_retina.jpg) no-repeat;}
+i.icon.i21 {background: url(i/del_retina.jpg) no-repeat;}
+i.icon.i22 {background: url(i/share_retina.png) no-repeat;}
+i.icon.i23 {background: url(i/close_retina.png) no-repeat;}
+
+i.icon.i24 {background: url(i/up_retina.png) no-repeat;}
+
+.document.form .str { background: url(i/str_retina.png); }
+.document_form .control_flip .handle {background: url(i/handle_retina.png);}
+.document_form .control_flip .bg {background: url(i/flip_retina.png);}
+.folders ul li .str {background: url(i/str_retina.png);}
+
+body a.back .im {background: url(i/back_left_retina.png);-webkit-background-size: 100%;background-size: 100%;}
+body a.back {background: url(i/back_right_retina.png) top right;-webkit-background-size: cover;background-size: cover;}
+
+body a.lvlup {background: url(i/levelup_retina.png) no-repeat top left;-webkit-background-size: 100%;background-size: 100%;}
+
+}

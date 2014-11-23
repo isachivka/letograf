@@ -1,0 +1,217 @@
+<!-- @include 'kit/head.kit' -->
+<div id="olap" data-rel="page">
+  <div style='-webkit-overflow-scrolling:touch; overflow: auto;'>
+    <iframe src="design/new/v5/html/index.html" class="olap" width="100%" frameborder="0"></iframe>
+  </div>
+  <div class="olap_content">
+    <div class="input_set">
+      <div class="inp_lbl"><label>Дата регистрации</label><input readonly data-rel="multipage" href="#input_1" type="text" value=""></div>
+      <div class="inp_lbl"><label>Значение</label><input readonly data-rel="multipage" href="#input_2" type="text" value=""></div>
+      <div class="inp_lbl"><label>Условие</label><input readonly data-rel="multipage" href="#input_33" type="text" value=""></div>
+    </div>
+    <div class="btns">
+      <input type="button" value="Сформировать отчет" />
+      <input type="button" value="Вернуться" />
+    </div>
+    <h4>Типы документов в разрезе организаций СЭД</h4>
+    <ul class="olap_table">
+      <li><a data-rel="multipage" href="#input_3">Головная организация</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Региональное подразделение 1</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Организация</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Головная организация НБУ</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Территориальное управление НБУ</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Подведомственная организация (Р1)</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Подведомственная организация (Р2)</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Комитет информационных технологийи телекоммуникаций Вологодской области</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Мэрия г. Череповец</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">ООО “УГМК-Холдинг”</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Районная подведомственная организация (Р2)</a><div class="str"></div></li>
+    </ul>
+    <ul class="olap_table">
+      <li><a data-rel="multipage" href="#input_3">Входящий</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Обращение</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Проект исх.</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Исходящий</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Проект внутр.</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Внутренний</a><div class="str"></div></li>
+      <li><a data-rel="multipage" href="#input_3">Всего</a><div class="str"></div></li>
+    </ul>
+  </div>
+  <div class="olap_table_content">
+    <div class="wr">
+      <table>
+        <tr>
+          <th></th>
+          <th>Входящий</th>
+          <th>Обращение</th>
+          <th>Исходящий</th>
+          <th>Внутренний</th>
+          <th>Всего</th>
+        </tr>
+        <tr>
+          <th>Головная организация</th>
+          <td class="open_pop" href="#pop2">27</td>
+          <td class="open_pop" href="#pop2">2</td>
+          <td class="open_pop" href="#pop2">0</td>
+          <td class="open_pop" href="#pop2">0</td>
+          <td class="open_pop" href="#pop2">29</td>
+        </tr>
+        <tr>
+          <th>Региональное подразделение</th>
+          <td class="open_pop" href="#pop2">1</td>
+          <td class="open_pop" href="#pop2">1</td>
+          <td class="open_pop" href="#pop2">1</td>
+          <td class="open_pop" href="#pop2">1</td>
+          <td class="open_pop" href="#pop2">4</td>
+        </tr>
+        <tr>
+          <th>Организиция</th>
+          <td class="open_pop" href="#pop2">2</td>
+          <td class="open_pop" href="#pop2">0</td>
+          <td class="open_pop" href="#pop2">0</td>
+          <td class="open_pop" href="#pop2">0</td>
+          <td class="open_pop" href="#pop2">2</td>
+        </tr>
+        <tr>
+          <th>Мэрия города Череповец</th>
+          <td class="open_pop" href="#pop2">1</td>
+          <td class="open_pop" href="#pop2">1</td>
+          <td class="open_pop" href="#pop2">1</td>
+          <td class="open_pop" href="#pop2">1</td>
+          <td class="open_pop" href="#pop2">4</td>
+        </tr>
+        <tr class="sum">
+          <th>Всего</th>
+          <td class="open_pop" href="#pop2">31</td>
+          <td class="open_pop" href="#pop2">4</td>
+          <td class="open_pop" href="#pop2">2</td>
+          <td class="open_pop" href="#pop2">2</td>
+          <td class="open_pop" href="#pop2">39</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="document_form">
+  <div id="input_1" data-rel="page">
+    <div class="back_bg"><a href="#olap" data-rel="multipage" class="back"><i class="im"></i>Назад</a></div>
+    <div class="input_form datepick">
+      <label for="">Date</label>
+      <p class="out">27.02.2014</p>
+      <input type="hidden" name="" value="27.02.2014" />
+      <div class="cols_3">
+        <div class="col">
+          <div class="wrapper day">
+            <a href="" class="btn add">+</a>
+            <input type="text" name="" id="" />
+            <a href="" class="btn del">-</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="wrapper month">
+            <a href="" class="btn add">+</a>
+            <input type="text" name="" id="" />
+            <a href="" class="btn del">-</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="wrapper year">
+            <a href="" class="btn add">+</a>
+            <input type="text" name="" id="" />
+            <a href="" class="btn del">-</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="input_2" data-rel="page">
+    <div class="back_bg"><a href="#olap" data-rel="multipage" class="back"><i class="im"></i>Назад</a></div>
+    <div class="input_form">
+      <label for="">String</label>
+      <input type="text" name="" id="" value="">
+    </div>
+  </div>
+  <div id="input_33" data-rel="page">
+    <div class="back_bg"><a href="#olap" data-rel="multipage" class="back"><i class="im"></i>Назад</a></div>
+    <div class="input_form peoples">
+      <label for="r1"><input type="radio" name="people" id="r1" />< </label>
+      <label for="r2"><input type="radio" name="people" id="r2" />= </label>
+      <label for="r3"><input type="radio" name="people" id="r3" />> </label>
+    </div>
+  </div>
+  <div id="input_3" data-rel="page">
+    <div class="back_bg"><a href="#olap" data-rel="multipage" class="back"><i class="im"></i>Назад</a></div>
+    <div class="olap_content">
+      <ul class="olap_table center">
+        <li><a href="table.html">Головная организация</a></li>
+        <li><a href="table.html">Региональное подразделение 1</a></li>
+        <li><a href="table.html">Организация</a></li>
+        <li><a href="table.html">Головная организация НБУ</a></li>
+        <li><a href="table.html">Территориальное управление НБУ</a></li>
+        <li><a href="table.html">Подведомственная организация (Р1)</a></li>
+        <li><a href="table.html">Подведомственная организация (Р2)</a></li>
+        <li><a href="table.html">Комитет информационных технологийи телекоммуникаций Вологодской области</a></li>
+        <li><a href="table.html">Мэрия г. Череповец</a></li>
+        <li><a href="table.html">ООО “УГМК-Холдинг”</a></li>
+        <li><a href="table.html">Районная подведомственная организация (Р2)</a></li>
+      </ul>
+      <ul class="olap_table center">
+        <li><a href="table.html">Входящий</a></li>
+        <li><a href="table.html">Обращение</a></li>
+        <li><a href="table.html">Проект исх.</a></li>
+        <li><a href="table.html">Исходящий</a></li>
+        <li><a href="table.html">Проект внутр.</a></li>
+        <li><a href="table.html">Внутренний</a></li>
+        <li><a href="table.html">Всего</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="fix_fixed_box">
+  <div class="top_fix">
+    <div class="pop hide" id="pop1">
+      <div class="b_top_box">
+        <div class="label c3 without_content">Пользователи <div class="icns"><a class="close_pop" href=""><i class="icon i23"></i></a></div></div>
+      </div>
+      <div class="b_top_box">
+        <div class="label c3">Основная <em></em></div>
+        <div class="content hide">
+          <ul class="type_1">
+            <li><a href=""><em></em>Входящие документы</a></li>
+            <li class="active"><a href=""><em></em>Исходящие документы</a></li>
+            <li><a href=""><em></em>Документы на согласование</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- @include 'kit/doc_inner.kit' -->
+    </div>
+  </div>
+</div>
+<div class="fix_h"></div>
+<div class="fix_fixed_box wind">
+  <div class="top_fix">
+    <div class="pop hide_wind" id="pop3">
+      <div class="b_top_box">
+        <div class="label c3 without_content">Пользователи <div class="icns"><a class="close_pop" href=""><i class="icon i23"></i></a></div></div>
+      </div>
+      <div class="b_top_box">
+        <div class="label c3">Основная <em></em></div>
+        <div class="content hide">
+          <ul class="type_1">
+            <li><a href=""><em></em>Входящие документы</a></li>
+            <li class="active"><a href=""><em></em>Исходящие документы</a></li>
+            <li><a href=""><em></em>Документы на согласование</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- @include 'kit/chart_inner.kit' -->
+    </div>
+  </div>
+</div>
+<div class="fix_h"></div>
+<div class="pop actions hide" id="pop2">
+  <input type="button" class="open_pop close_pop" href="#pop1" value="Документ" />
+  <input type="button" class="open_pop close_pop" href="#pop3" value="График" />
+  <input type="button" class="close_pop" value="Отказаться от подписания" />
+</div>
+<!-- @include 'kit/foot.kit' -->

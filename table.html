@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <title></title>
+  <meta name="description">
+  <link href="application.css" rel="stylesheet">
+<link href="retina.css" rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)">  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta content="width=device-width" name="viewport">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+<![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+
+
+<script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+<script src="js/morris.js"></script>
+<link rel="stylesheet" href="js/morris.css"></head>
+<body>
+  <div class="fix_fixed_box">
+  <div class="top_fix">
+    <div class="b_top_box">
+      <div class="label c1">Приказы и распоряжения <em></em></div>
+      <div class="content hide">
+        <ul class="type_1">
+          <li><a href=""><em></em>Отчеты и журналы</a></li>
+          <li class="active"><a href=""><em></em>Приказы и распоряжения</a></li>
+          <li><a href=""><em></em>Документы и поручения</a></li>
+        </ul>
+        <ul class="type_1">
+          <li><a href=""><em></em>Профиль <span class="icns"><i class="i1"></i></span></a></li>
+          <li><a href=""><em></em>Делегирование <span class="icns"><i class="i2"></i></span></a></li>
+        </ul>
+        <ul class="type_1">
+          <li class="active"><a href=""><em></em>Русский язык <span class="icns"><i class="i3"></i></span></a></li>
+          <li><a href=""><em></em>Українська мова <span class="icns"><i class="i4"></i></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="b_top_box">
+      <div class="label c2 two"><div class="icns"><a class="open_pop" href="#pop1"><i class="icon i22"></i></a><em></em></div>Информация<span>Исходящий документ</span></div>
+      <div class="content hide">
+        <ul class="type_2">
+          <li>
+            <a href="">Документы</a>
+            <ul>
+              <li><a href=""><em></em>Новые <span class="icns"><i class="count">10</i></span></a></li>
+              <li><a href=""><em></em>Пописанные <span class="icns"><i class="count">0</i></span></a></li>
+            </ul>
+          </li>
+          <li class="active">
+            <a href="">Информация</a>
+            <ul>
+              <li class="active"><a href=""><em></em>Входящий документ <span class="icns"><i class="count">1/1</i></span></a></li>
+              <li><a href=""><em></em>Исходящий документ <span class="icns"><i class="count">0/1</i></span></a></li>
+              <li><a href=""><em></em>На согласование <span class="icns"><i class="count">2/2</i></span></a></li>
+              <li><a href=""><em></em>На рассмотрение <span class="icns"><i class="count">1/1</i></span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="b_top_box">
+      <div class="label c3"><div class="icns"><a class="open_pop" href="#pop2"><i class="icon i22"></i></a><em></em></div>Исходящие документы</div>
+      <div class="content hide">
+        <ul class="type_1">
+          <li><a href=""><em></em>Входящие документы</a></li>
+          <li class="active"><a href=""><em></em>Исходящие документы</a></li>
+          <li><a href=""><em></em>Документы на согласование</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pop hide" id="pop1">
+      <div class="b_top_box">
+        <div class="label c3 without_content">Пользователи <div class="icns"><a class="close_pop" href=""><i class="icon i23"></i></a></div></div>
+      </div>
+      <div class="b_top_box">
+        <div class="label c3">Основная <em></em></div>
+        <div class="content hide">
+          <ul class="type_1">
+            <li><a href=""><em></em>Входящие документы</a></li>
+            <li class="active"><a href=""><em></em>Исходящие документы</a></li>
+            <li><a href=""><em></em>Документы на согласование</a></li>
+            <li><a href=""><em></em>Входящие документы</a></li>
+            <li><a href=""><em></em>Документы на согласование</a></li>
+            <li><a href=""><em></em>Документы на согласование</a></li>
+            <li><a href=""><em></em>Входящие документы</a></li>
+            <li><a href=""><em></em>Документы на согласование</a></li>
+            <li><a href=""><em></em>Документы на согласование</a></li>
+            <li><a href=""><em></em>Входящие документы</a></li>
+            <li><a href=""><em></em>Документы на согласование</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+  <div class="document">
+    <h2>Исходящий документ</h2>
+    <div class="field">
+      <label>№ проекта</label>
+      <div class="data">ПР/ИСХ-Р1-004-13</div>
+    </div>
+    <div class="field">
+      <label>Рег. №</label>
+      <div class="data">27.02.2014 13:05:34</div>
+    </div>
+    <div class="field">
+      <label>Дата создания</label>
+      <div class="data"></div>
+    </div>
+    <div class="field">
+      <label>Рег. дата</label>
+      <div class="data"></div>
+    </div>
+    <div class="field">
+      <label>Гриф доступа</label>
+      <div class="data"><a href="">Общий</a></div>
+    </div>
+    <div class="field">
+      <label>Статус</label>
+      <div class="data"><a href="">На согласовании</a></div>
+    </div>
+    <div class="field">
+      <label>Вид документа</label>
+      <div class="data"><a href="">Поручение</a></div>
+    </div>
+    <div class="field">
+      <label>Тип документа</label>
+      <div class="data"><a href="">Инициативный</a></div>
+    </div>
+    <div class="field">
+      <label>В ответ на №</label>
+      <div class="data"></div>
+    </div>
+    <div class="field">
+      <label>Количество листов документа</label>
+      <div class="data">1</div>
+    </div>
+    <div class="field">
+      <label>Общее количество листов приложений</label>
+      <div class="data">1</div>
+    </div>
+    <div class="field">
+      <label>Краткое содержание</label>
+      <div class="data">О подготовке плана на 2 полугодие 2013 годапо программе “Содействие малому бизнесу”</div>
+    </div>
+    <div class="field">
+      <label>Подписывающий</label>
+      <div class="data"><a href="">Константинопольский КонстантинКонстантинович</a></div>
+    </div>
+    <div class="field">
+      <label>Исполнитель</label>
+      <div class="data"><a href="">Иванов Егор Тимофеевич</a></div>
+    </div>
+    <div class="field">
+      <label>Файлы</label>
+      <div class="data files">
+        <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>      </div>
+    </div>
+    <div class="btns">
+      <a href="form.html" class="btn">Редактировать</a>
+      <a href="content.html" class="btn">Назад</a>
+    </div>
+  </div>
+</div>    </div>
+  </div>
+</div>
+<div class="fix_h"></div>
+
+<div class="pop top hide" id="pop2">
+  <div class="b_top_box">
+    <div class="label c3 without_content">Пользователи <div class="icns"><a class="close_pop" href=""><i class="icon i23"></i></a></div></div>
+  </div>
+  <div class="b_top_box">
+    <div class="label c3">Основная <em></em></div>
+    <div class="content hide">
+      <ul class="type_1">
+        <li><a href=""><em></em>Входящие документы</a></li>
+        <li class="active"><a href=""><em></em>Исходящие документы</a></li>
+        <li><a href=""><em></em>Документы на согласование</a></li>
+        <li><a href=""><em></em>Входящие документы</a></li>
+        <li class="active"><a href=""><em></em>Исходящие документы</a></li>
+        <li><a href=""><em></em>Документы на согласование</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+  <div class="document">
+    <h2>Исходящий документ</h2>
+    <div class="field">
+      <label>№ проекта</label>
+      <div class="data">ПР/ИСХ-Р1-004-13</div>
+    </div>
+    <div class="field">
+      <label>Рег. №</label>
+      <div class="data">27.02.2014 13:05:34</div>
+    </div>
+    <div class="field">
+      <label>Дата создания</label>
+      <div class="data"></div>
+    </div>
+    <div class="field">
+      <label>Рег. дата</label>
+      <div class="data"></div>
+    </div>
+    <div class="field">
+      <label>Гриф доступа</label>
+      <div class="data"><a href="">Общий</a></div>
+    </div>
+    <div class="field">
+      <label>Статус</label>
+      <div class="data"><a href="">На согласовании</a></div>
+    </div>
+    <div class="field">
+      <label>Вид документа</label>
+      <div class="data"><a href="">Поручение</a></div>
+    </div>
+    <div class="field">
+      <label>Тип документа</label>
+      <div class="data"><a href="">Инициативный</a></div>
+    </div>
+    <div class="field">
+      <label>В ответ на №</label>
+      <div class="data"></div>
+    </div>
+    <div class="field">
+      <label>Количество листов документа</label>
+      <div class="data">1</div>
+    </div>
+    <div class="field">
+      <label>Общее количество листов приложений</label>
+      <div class="data">1</div>
+    </div>
+    <div class="field">
+      <label>Краткое содержание</label>
+      <div class="data">О подготовке плана на 2 полугодие 2013 годапо программе “Содействие малому бизнесу”</div>
+    </div>
+    <div class="field">
+      <label>Подписывающий</label>
+      <div class="data"><a href="">Константинопольский КонстантинКонстантинович</a></div>
+    </div>
+    <div class="field">
+      <label>Исполнитель</label>
+      <div class="data"><a href="">Иванов Егор Тимофеевич</a></div>
+    </div>
+    <div class="field">
+      <label>Файлы</label>
+      <div class="data files">
+        <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>      </div>
+    </div>
+    <div class="btns">
+      <a href="form.html" class="btn">Редактировать</a>
+      <a href="content.html" class="btn">Назад</a>
+    </div>
+  </div>
+</div></div><div class="content">
+  <div class="doc_table_wrap">
+    <div class="doc_table">
+      <div class="field check cols">
+        <div class="col" style="width:auto">
+          <div class="check_wrap"><input type="checkbox" name="" id="" /></div>
+          <label>Рег. №:</label>
+          <div class="data">23-098</div>
+        </div>
+        <div class="col right" style="width:auto">
+          <label for="">Дата</label>
+          <div class="data">27.02.2013</div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Корреспондент:</label>
+        <div class="data">Королев Анатолий Иванович</div>
+      </div>
+      <div class="field">
+        <label>Содержимое:</label>
+        <div class="data">Анализ зарубежного опыта обычно правомочен. Исходя из структуры пирамиды Маслоу, продукт реально программирует конвергентный системный анализ, повышая конкуренцию.</div>
+      </div>
+      <div class="field">
+        <div class="data files mini">
+          <div class="file">
+            <a href="">
+              <i class="icon i2"></i>
+              <h4>description.doc</h4>
+              <span>1,35 МБ</span>
+            </a>
+          </div>
+          <div class="file">
+            <a href="">
+              <i class="icon i3"></i>
+              <h4>description.doc</h4>
+              <span>1,35 МБ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="doc_table">
+      <div class="field check cols">
+        <div class="col" style="width:38%">
+          <div class="check_wrap"><input type="checkbox" name="" id="" /></div>
+          <label>Рег. №:</label>
+          <div class="data">23-098</div>
+        </div>
+        <div class="col" style="width:30%">
+          <label for="">Дата</label>
+          <div class="data">27.02.2013</div>
+        </div>
+        <div class="col right" style="width:auto">
+          <label for="">Срок</label>
+          <div class="data">27.02.2013</div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Корреспондент:</label>
+        <div class="data">Королев Анатолий Иванович</div>
+      </div>
+      <div class="field">
+        <label>Ответственный исполнитель:</label>
+        <div class="data">Елисеев Пётр Ильич</div>
+      </div>
+      <div class="field">
+        <label>Текст поручения:</label>
+        <div class="data">К рассмотрению</div>
+      </div>
+      <div class="field">
+        <div class="data files mini">
+          <div class="file">
+            <a href="">
+              <i class="icon i2"></i>
+              <h4>description.doc</h4>
+              <span>1,35 МБ</span>
+            </a>
+          </div>
+          <div class="file">
+            <a href="">
+              <i class="icon i3"></i>
+              <h4>description.doc</h4>
+              <span>1,35 МБ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="doc_table">
+      <div class="field check">
+        <div class="check_wrap"><input type="checkbox" name="" id="" /></div>
+        <label>Рег. №:</label>
+        <div class="data">23-098</div>
+      </div>
+      <div class="field">
+        <label>Автор поручения:</label>
+        <div class="data">Королев Анатолий Иванович</div>
+      </div>
+      <div class="field">
+        <label>Ответственный исполнитель:</label>
+        <div class="data">Елисеев Петр Ильич</div>
+      </div>
+      <div class="field">
+        <label>Вложенные документы:</label>
+        <div class="data">
+          <div class="doc_table">
+            <div class="field check">
+              <div class="check_wrap"><input type="checkbox" name="" id="" /></div>
+              <label>Рег. №:</label>
+              <div class="data">23-098</div>
+            </div>
+            <div class="field">
+              <label>Ответственный исполнитель:</label>
+              <div class="data">Елисеев Петр Ильич</div>
+            </div>
+            <div class="field">
+              <label>Контролер:</label>
+              <div class="data"></div>
+            </div>
+            <div class="field inline">
+              <label>Срок исполнения:</label>
+              <div class="data">27.02.2014</div>
+            </div>
+            <div class="field">
+              <label>Состояние подрезолюции:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <label>Вложенные документы:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <div class="data files mini">
+                <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>              </div>
+            </div>
+            <div class="field">
+              <label>Статус контроля:</label>
+              <div class="data">Контрольный</div>
+            </div>
+            <div class="field">
+              <label>Текст поручения:</label>
+              <div class="data">К рассмотрению</div>
+            </div>
+            <div class="field">
+              <label></label>
+              <div class="data">Официальный ответ на действия застройщика ООО “Аркадия-Плаза”</div>
+            </div>
+            <div class="field">
+              <label>Корреспондент:</label>
+              <div class="data">Абрамов Р.</div>
+            </div>
+          </div>
+          <div class="doc_table">
+            <div class="field inline">
+              <label>Рег. №:</label>
+              <div class="data">23-098-7654</div>
+            </div>
+            <div class="field inline">
+              <label>Дата поручения:</label>
+              <div class="data">27.02.2014 13:05:34</div>
+            </div>
+            <div class="field">
+              <label>Автор поручения:</label>
+              <div class="data">Королев Анатолий Иванович</div>
+            </div>
+            <div class="field">
+              <label>Ответственный исполнитель:</label>
+              <div class="data">Елисеев Петр Ильич</div>
+            </div>
+            <div class="field">
+              <label>Контролер:</label>
+              <div class="data"></div>
+            </div>
+            <div class="field inline">
+              <label>Срок исполнения:</label>
+              <div class="data">27.02.2014</div>
+            </div>
+            <div class="field">
+              <label>Состояние подрезолюции:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <label>Вложенные документы:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <div class="data files mini">
+                <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>              </div>
+            </div>
+            <div class="field">
+              <label>Статус контроля:</label>
+              <div class="data">Контрольный</div>
+            </div>
+            <div class="field">
+              <label>Текст поручения:</label>
+              <div class="data">К рассмотрению</div>
+            </div>
+            <div class="field">
+              <label></label>
+              <div class="data">Официальный ответ на действия застройщика ООО “Аркадия-Плаза”</div>
+            </div>
+            <div class="field">
+              <label>Корреспондент:</label>
+              <div class="data">Абрамов Р.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="data files mini">
+          <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>        </div>
+      </div>
+      <div class="field">
+        <label>Статус контроля:</label>
+        <div class="data">Контрольный</div>
+      </div>
+      <div class="field">
+        <label>Текст поручения:</label>
+        <div class="data">К рассмотрению</div>
+      </div>
+      <div class="field">
+        <label></label>
+        <div class="data">Официальный ответ на действия застройщика ООО “Аркадия-Плаза”</div>
+      </div>
+      <div class="field">
+        <label>Корреспондент:</label>
+        <div class="data">Абрамов Р.</div>
+      </div>
+    </div>
+    <div class="doc_table">
+      <div class="field check">
+        <div class="check_wrap"><input type="checkbox" name="" id="" /></div>
+        <label>Рег. №:</label>
+        <div class="data">23-098-7654</div>
+      </div>
+      <div class="field inline">
+        <label>Дата поручения:</label>
+        <div class="data">27.02.2014 13:05:34</div>
+      </div>
+      <div class="field">
+        <label>Автор поручения:</label>
+        <div class="data">Королев Анатолий Иванович</div>
+      </div>
+      <div class="field">
+        <label>Ответственный исполнитель:</label>
+        <div class="data">Елисеев Петр Ильич</div>
+      </div>
+      <div class="field">
+        <label>Контролер:</label>
+        <div class="data"></div>
+      </div>
+      <div class="field inline">
+        <label>Срок исполнения:</label>
+        <div class="data">27.02.2014</div>
+      </div>
+      <div class="field">
+        <label>Состояние подрезолюции:</label>
+        <div class="data">Исполнена</div>
+      </div>
+      <div class="field">
+        <label>Вложенные документы:</label>
+        <div class="data">
+          <div class="doc_table">
+            <div class="field inline">
+              <label>Рег. №:</label>
+              <div class="data">23-098-7654</div>
+            </div>
+            <div class="field inline">
+              <label>Дата поручения:</label>
+              <div class="data">27.02.2014 13:05:34</div>
+            </div>
+            <div class="field">
+              <label>Автор поручения:</label>
+              <div class="data">Королев Анатолий Иванович</div>
+            </div>
+            <div class="field">
+              <label>Ответственный исполнитель:</label>
+              <div class="data">Елисеев Петр Ильич</div>
+            </div>
+            <div class="field">
+              <label>Контролер:</label>
+              <div class="data"></div>
+            </div>
+            <div class="field inline">
+              <label>Срок исполнения:</label>
+              <div class="data">27.02.2014</div>
+            </div>
+            <div class="field">
+              <label>Состояние подрезолюции:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <label>Вложенные документы:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <div class="data files mini">
+                <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>              </div>
+            </div>
+            <div class="field">
+              <label>Статус контроля:</label>
+              <div class="data">Контрольный</div>
+            </div>
+            <div class="field">
+              <label>Текст поручения:</label>
+              <div class="data">К рассмотрению</div>
+            </div>
+            <div class="field">
+              <label></label>
+              <div class="data">Официальный ответ на действия застройщика ООО “Аркадия-Плаза”</div>
+            </div>
+            <div class="field">
+              <label>Корреспондент:</label>
+              <div class="data">Абрамов Р.</div>
+            </div>
+          </div>
+          <div class="doc_table">
+            <div class="field inline">
+              <label>Рег. №:</label>
+              <div class="data">23-098-7654</div>
+            </div>
+            <div class="field inline">
+              <label>Дата поручения:</label>
+              <div class="data">27.02.2014 13:05:34</div>
+            </div>
+            <div class="field">
+              <label>Автор поручения:</label>
+              <div class="data">Королев Анатолий Иванович</div>
+            </div>
+            <div class="field">
+              <label>Ответственный исполнитель:</label>
+              <div class="data">Елисеев Петр Ильич</div>
+            </div>
+            <div class="field">
+              <label>Контролер:</label>
+              <div class="data"></div>
+            </div>
+            <div class="field inline">
+              <label>Срок исполнения:</label>
+              <div class="data">27.02.2014</div>
+            </div>
+            <div class="field">
+              <label>Состояние подрезолюции:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <label>Вложенные документы:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <div class="data files mini">
+                <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>              </div>
+            </div>
+            <div class="field">
+              <label>Статус контроля:</label>
+              <div class="data">Контрольный</div>
+            </div>
+            <div class="field">
+              <label>Текст поручения:</label>
+              <div class="data">К рассмотрению</div>
+            </div>
+            <div class="field">
+              <label></label>
+              <div class="data">Официальный ответ на действия застройщика ООО “Аркадия-Плаза”</div>
+            </div>
+            <div class="field">
+              <label>Корреспондент:</label>
+              <div class="data">Абрамов Р.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="data files mini">
+          <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>        </div>
+      </div>
+      <div class="field">
+        <label>Статус контроля:</label>
+        <div class="data">Контрольный</div>
+      </div>
+      <div class="field">
+        <label>Текст поручения:</label>
+        <div class="data">К рассмотрению</div>
+      </div>
+      <div class="field">
+        <label></label>
+        <div class="data">Официальный ответ на действия застройщика ООО “Аркадия-Плаза”</div>
+      </div>
+      <div class="field">
+        <label>Корреспондент:</label>
+        <div class="data">Абрамов Р.</div>
+      </div>
+    </div>
+    <div class="doc_table">
+      <div class="field check">
+        <div class="check_wrap"><input type="checkbox" name="" id="" /></div>
+        <label>Рег. №:</label>
+        <div class="data">23-098-7654</div>
+      </div>
+      <div class="field inline">
+        <label>Дата поручения:</label>
+        <div class="data">27.02.2014 13:05:34</div>
+      </div>
+      <div class="field">
+        <label>Автор поручения:</label>
+        <div class="data">Королев Анатолий Иванович</div>
+      </div>
+      <div class="field">
+        <label>Ответственный исполнитель:</label>
+        <div class="data">Елисеев Петр Ильич</div>
+      </div>
+      <div class="field">
+        <label>Контролер:</label>
+        <div class="data"></div>
+      </div>
+      <div class="field inline">
+        <label>Срок исполнения:</label>
+        <div class="data">27.02.2014</div>
+      </div>
+      <div class="field">
+        <label>Состояние подрезолюции:</label>
+        <div class="data">Исполнена</div>
+      </div>
+      <div class="field">
+        <label>Вложенные документы:</label>
+        <div class="data">
+          <div class="doc_table">
+            <div class="field inline">
+              <label>Рег. №:</label>
+              <div class="data">23-098-7654</div>
+            </div>
+            <div class="field inline">
+              <label>Дата поручения:</label>
+              <div class="data">27.02.2014 13:05:34</div>
+            </div>
+            <div class="field">
+              <label>Автор поручения:</label>
+              <div class="data">Королев Анатолий Иванович</div>
+            </div>
+            <div class="field">
+              <label>Ответственный исполнитель:</label>
+              <div class="data">Елисеев Петр Ильич</div>
+            </div>
+            <div class="field">
+              <label>Контролер:</label>
+              <div class="data"></div>
+            </div>
+            <div class="field inline">
+              <label>Срок исполнения:</label>
+              <div class="data">27.02.2014</div>
+            </div>
+            <div class="field">
+              <label>Состояние подрезолюции:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <label>Вложенные документы:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <div class="data files mini">
+                <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>              </div>
+            </div>
+            <div class="field">
+              <label>Статус контроля:</label>
+              <div class="data">Контрольный</div>
+            </div>
+            <div class="field">
+              <label>Текст поручения:</label>
+              <div class="data">К рассмотрению</div>
+            </div>
+            <div class="field">
+              <label></label>
+              <div class="data">Официальный ответ на действия застройщика ООО “Аркадия-Плаза”</div>
+            </div>
+            <div class="field">
+              <label>Корреспондент:</label>
+              <div class="data">Абрамов Р.</div>
+            </div>
+          </div>
+          <div class="doc_table">
+            <div class="field inline">
+              <label>Рег. №:</label>
+              <div class="data">23-098-7654</div>
+            </div>
+            <div class="field inline">
+              <label>Дата поручения:</label>
+              <div class="data">27.02.2014 13:05:34</div>
+            </div>
+            <div class="field">
+              <label>Автор поручения:</label>
+              <div class="data">Королев Анатолий Иванович</div>
+            </div>
+            <div class="field">
+              <label>Ответственный исполнитель:</label>
+              <div class="data">Елисеев Петр Ильич</div>
+            </div>
+            <div class="field">
+              <label>Контролер:</label>
+              <div class="data"></div>
+            </div>
+            <div class="field inline">
+              <label>Срок исполнения:</label>
+              <div class="data">27.02.2014</div>
+            </div>
+            <div class="field">
+              <label>Состояние подрезолюции:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <label>Вложенные документы:</label>
+              <div class="data">Исполнена</div>
+            </div>
+            <div class="field">
+              <div class="data files mini">
+                <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>              </div>
+            </div>
+            <div class="field">
+              <label>Статус контроля:</label>
+              <div class="data">Контрольный</div>
+            </div>
+            <div class="field">
+              <label>Текст поручения:</label>
+              <div class="data">К рассмотрению</div>
+            </div>
+            <div class="field">
+              <label></label>
+              <div class="data">Официальный ответ на действия застройщика ООО “Аркадия-Плаза”</div>
+            </div>
+            <div class="field">
+              <label>Корреспондент:</label>
+              <div class="data">Абрамов Р.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="data files mini">
+          <div class="file">
+  <a href="">
+    <i class="icon i2"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i3"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i4"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i5"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i6"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i7"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i8"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i9"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>
+<div class="file">
+  <a href="">
+    <i class="icon i10"></i>
+    <h4>description.doc</h4>
+    <span>1,35 МБ</span>
+  </a>
+</div>        </div>
+      </div>
+      <div class="field">
+        <label>Статус контроля:</label>
+        <div class="data">Контрольный</div>
+      </div>
+      <div class="field">
+        <label>Текст поручения:</label>
+        <div class="data">К рассмотрению</div>
+      </div>
+      <div class="field">
+        <label></label>
+        <div class="data">Официальный ответ на действия застройщика ООО “Аркадия-Плаза”</div>
+      </div>
+      <div class="field">
+        <label>Корреспондент:</label>
+        <div class="data">Абрамов Р.</div>
+      </div>
+    </div>
+  </div>
+  <div class="pager">
+    <ul>
+      <li class="qua"><a href="">1</a></li>
+      <li class="qua"><a href="">2</a></li>
+      <li class="qua"><a href="">3</a></li>
+      <li class="qua">...</li>
+      <li class="qua"><a href="">25</a></li>
+      <li class="qua"><a href="">26</a></li>
+      <li class="str"><a href="">→</a></li>
+    </ul>
+  </div>
+</div>
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>

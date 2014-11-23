@@ -1,0 +1,22 @@
+/ @include 'kit/head_login.kit'
+
+#login
+  .bg 
+  .logo
+    %a{:href => ""} 
+  %form{:action => "content.html", :method => 'get'} 
+    %fieldset 
+      .legend Авторизация 
+      .input_set 
+        .mr
+          %input{:type => "text", :value => "", :placeholder => "Логин"}
+          %a.double_login 
+          %input.double_login_input.hide{:type => "text", :value => "", :placeholder => "Второй логин"}
+          %input{:type => "password", :value => "", :placeholder => "Пароль"}  
+      %input{:type => "submit", :value => "Войти"}
+  .remember 
+    %a{:href => ""} Забыли пароль?
+
+.bdb 
+
+/ @include 'kit/foot.kit'
